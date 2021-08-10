@@ -90,6 +90,41 @@
     height: 15px;
 }
 
+
+.direction__item{
+    animation-name: view;
+    animation-duration: .3s;
+    animation-fill-mode: forwards;
+}
+
+
+@keyframes view {
+    from{
+        transform: scale(0);
+    }
+    to{
+        transform: scale(1);
+    }
+}
+
+
+.direction__item.disable{
+    animation-name: hide;
+    animation-duration: .3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes hide {
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(0);
+    }
+}
+
+
+
 .direction__item.sea .direction__itemColor{
     background-color: #57efff;
 }
@@ -107,22 +142,3 @@
 }
 
 
-.direction__item.disable{
-    /*animation: disable .5s;*/
-    display: none;
-}
-
-
-/*@keyframes disable {*/
-/*    from{*/
-/*        transform: scale(1);*/
-/*    }*/
-
-/*    99%{*/
-/*        transform: scale(0);*/
-/*    }*/
-/*    to{*/
-/*        display: none!important;*/
-/*    }*/
-
-/*}*/

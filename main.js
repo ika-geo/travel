@@ -30,7 +30,11 @@ $direction.forEach(a=>a.addEventListener("click", function (){
             a.classList.add("disable")
             $directionItem.forEach(a=>{
                 if (a.classList.contains("sea")){
-                    a.classList.add("disable")
+                    a.classList.add("disable");
+                    setTimeout(function (){
+                        a.style.display="none"
+                    }, 300)
+
                 }
             })
         }
@@ -38,7 +42,8 @@ $direction.forEach(a=>a.addEventListener("click", function (){
             a.classList.remove("disable")
             $directionItem.forEach(a=>{
                 if (a.classList.contains("sea")){
-                    a.classList.remove("disable")
+                    a.classList.remove("disable");
+                    a.style.display="unset"
                 }
             })
         }
@@ -52,6 +57,10 @@ $direction.forEach(a=>a.addEventListener("click", function (){
             $directionItem.forEach(a=>{
                 if (a.classList.contains("mountain")){
                     a.classList.add("disable")
+                    setTimeout(function (){
+                        a.style.display="none"
+                    }, 300)
+
                 }
             })
         }
@@ -60,6 +69,7 @@ $direction.forEach(a=>a.addEventListener("click", function (){
             $directionItem.forEach(a=>{
                 if (a.classList.contains("mountain")){
                     a.classList.remove("disable")
+                    a.style.display="unset"
                 }
             })
         }
@@ -73,6 +83,9 @@ $direction.forEach(a=>a.addEventListener("click", function (){
             $directionItem.forEach(a=>{
                 if (a.classList.contains("extremal")){
                     a.classList.add("disable")
+                    setTimeout(function (){
+                        a.style.display="none"
+                    }, 300)
                 }
             })
         }
@@ -81,6 +94,7 @@ $direction.forEach(a=>a.addEventListener("click", function (){
             $directionItem.forEach(a=>{
                 if (a.classList.contains("extremal")){
                     a.classList.remove("disable")
+                    a.style.display="unset"
                 }
             })
         }
@@ -94,6 +108,9 @@ $direction.forEach(a=>a.addEventListener("click", function (){
             $directionItem.forEach(a=>{
                 if (a.classList.contains("cognitive")){
                     a.classList.add("disable")
+                    setTimeout(function (){
+                        a.style.display="none"
+                    }, 300)
                 }
             })
         }
@@ -102,6 +119,7 @@ $direction.forEach(a=>a.addEventListener("click", function (){
             $directionItem.forEach(a=>{
                 if (a.classList.contains("cognitive")){
                     a.classList.remove("disable")
+                    a.style.display="unset"
                 }
             })
         }
