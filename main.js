@@ -1,3 +1,16 @@
+// burgerMenu
+
+let burgerBtn = document.querySelector(".burgerBTN")
+let burgerMenu = document.querySelector(".header__menu")
+
+burgerBtn.addEventListener("click", function (){
+    burgerBtn.classList.toggle("active")
+    burgerMenu.classList.toggle("active")
+})
+
+
+
+
 // attraction, change attraction__mainSub
 
 
@@ -20,8 +33,6 @@ for (let i=0; i<$attractionMainSub.length; i++){
 
 let $direction = document.querySelectorAll(".direction__types li");
 let $directionItem = document.querySelectorAll(".direction__item")
-
-
 
 
 $direction.forEach(a=>a.addEventListener("click", function (){
@@ -50,7 +61,6 @@ $direction.forEach(a=>a.addEventListener("click", function (){
     }
 
 
-
     else if (a.classList.contains("mountain")){
         if (!a.classList.contains("disable")){
             a.classList.add("disable")
@@ -76,7 +86,6 @@ $direction.forEach(a=>a.addEventListener("click", function (){
     }
 
 
-
     else if (a.classList.contains("extremal")){
         if (!a.classList.contains("disable")){
             a.classList.add("disable")
@@ -99,8 +108,6 @@ $direction.forEach(a=>a.addEventListener("click", function (){
             })
         }
     }
-
-
 
     else if (a.classList.contains("cognitive")){
         if (!a.classList.contains("disable")){
@@ -128,6 +135,83 @@ $direction.forEach(a=>a.addEventListener("click", function (){
 
 
 
+// slider
+
+
+window.addEventListener("resize", function (){
+    if (window.innerWidth<=768){
+        let swiper = new Swiper(".swiper-container", {
+            slidesPerView: 2,
+            spaceBetween: 30,
+            slidesPerGroup: 1,
+            loop: true,
+            loopFillGroupWithBlank: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    }
+
+    else {
+        let swiper = new Swiper(".swiper-container", {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            slidesPerGroup: 1,
+            loop: true,
+            loopFillGroupWithBlank: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    }
+})
+
+
+if (window.innerWidth<=768){
+    let swiper = new Swiper(".swiper-container", {
+        slidesPerView: 2,
+        spaceBetween: 30,
+        slidesPerGroup: 1,
+        loop: true,
+        loopFillGroupWithBlank: true,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+    });
+}
+
+else {
+   let swiper = new Swiper(".swiper-container", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        slidesPerGroup: 1,
+        loop: true,
+        loopFillGroupWithBlank: true,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+    });
+}
 
 
 

@@ -5,9 +5,21 @@ header{
     padding-top: 70px;
     padding-bottom: 100px;
 }
+@media screen and (max-width: 425px) {
+    header {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+}
 
 .header__top{
     margin-bottom: 70px;
+}
+
+@media screen and (max-width: 425px) {
+    .header__top{
+        margin-bottom: 30px;
+    }
 }
 
 
@@ -17,6 +29,14 @@ header{
     color: white;
     font-size: 40px;
     padding-bottom: 40px;
+}
+
+
+@media screen and (max-width: 425px){
+    .header__title{
+        font-size: 35px;
+        padding-bottom: 20px;
+    }
 }
 
 

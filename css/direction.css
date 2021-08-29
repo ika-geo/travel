@@ -3,6 +3,13 @@
 }
 
 
+@media screen and (max-width: 768px){
+    .direction{
+        margin-bottom: 20px;
+    }
+}
+
+
 .direction__header{
     background: linear-gradient(180deg, rgba(0, 255, 231, 0.5), rgba(0, 255, 102, 0.5));
     left: 0;
@@ -17,6 +24,7 @@
 
 .direction__types{
     display: flex;
+    flex-wrap: wrap;
 }
 
 .direction__header h1 {
@@ -34,6 +42,7 @@
     font-size: 20px;
     padding: 10px 20px;
     transition-duration: .3s;
+    margin-bottom: 10px;
 }
 
 
@@ -71,6 +80,19 @@
     column-gap: 30px;
 }
 
+@media screen and (max-width: 768px){
+    .direction__content{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width: 425px){
+    .direction__content{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
 
 .direction__item h3{
     text-align: center;
@@ -102,6 +124,7 @@
     from{
         transform: scale(0);
     }
+
     to{
         transform: scale(1);
     }

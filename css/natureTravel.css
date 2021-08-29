@@ -3,6 +3,15 @@
     margin-bottom: 50px;
 }
 
+
+@media screen and (max-width: 500px){
+    .natureTravel{
+        padding-top: 20px;
+        margin-bottom: 20px;
+    }
+}
+
+
 .natureTravel__block{
     display: flex;
     justify-content: space-between;
@@ -40,6 +49,13 @@
 .natureTravel__item.half{
     width: 47%;
 }
+
+@media screen and (max-width: 550px){
+    .natureTravel__item.half{
+        width: 100%;
+    }
+}
+
 
 .natureTravel__item{
     position: relative;
@@ -108,6 +124,13 @@
     width: 47%;
     display: flex;
     margin-bottom: 20px;
+}
+
+
+@media screen and (max-width: 550px){
+    .natureTravel__item2 {
+        width: 100%;
+    }
 }
 
 

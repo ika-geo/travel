@@ -2,6 +2,12 @@
     margin-bottom: 50px;
 }
 
+@media screen and (max-width: 768px){
+    .attraction{
+        margin-bottom: 20px;
+    }
+}
+
 .attraction .wrapper{
     display: flex;
     justify-content: space-between;
@@ -84,13 +90,35 @@
     align-items: flex-start;
 }
 
+@media screen and (max-width: 425px){
+    .attraction__item.side{
+        flex-direction: column;
+    }
+}
+
+
+
 .attraction__item.side img{
     max-width: 25%;
 }
 
+@media screen and (max-width: 425px){
+    .attraction__item.side img{
+        max-width: 100%;
+    }
+}
+
+
 .attraction__itemText{
     max-width: 70%;
 }
+
+@media screen and (max-width: 425px){
+    .attraction__itemText{
+        max-width: unset
+    }
+}
+
 
 
 .attraction__count{
